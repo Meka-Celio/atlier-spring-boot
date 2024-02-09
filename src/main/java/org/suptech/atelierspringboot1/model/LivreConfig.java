@@ -16,6 +16,7 @@ public class LivreConfig {
     CommandLineRunner livre_config() {
         return args -> {
             livreRepository.save(new Livre(null, "H&&M", "Tite", "123-57"));
+            livreRepository.save(new Livre(null, "Billy & Mandi", "Cartoon", "11-08"));
             livreRepository.findAll().forEach(System.out::println);
         };
     }
